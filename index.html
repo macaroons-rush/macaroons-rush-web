@@ -639,7 +639,7 @@
       }
 
       cartItemCount.textContent = totalItems + ' item' + (totalItems !== 1 ? 's' : '');
-      cartSubtotal.textContent  = '$' + totalPrice.toFixed(2);
+      cartSubtotal.textContent  = '₱' + totalPrice.toFixed(2);
 
       if (cart.length === 0) {
         cartEmpty.style.display = 'flex';
@@ -708,4 +708,5 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCart(); });
   </script>
 </body>
+
 </html>
